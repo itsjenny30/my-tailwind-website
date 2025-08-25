@@ -10,25 +10,26 @@
 
   <!-- Header -->
   <header class="bg-purple-300 text-gray-900 py-4">
-    <nav class="container mx-auto flex justify-between items-center px-4">
-      <h1 class="text-lg font-normal text-center w-full">Think_Fashion's Site</h1>
-    </nav>
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-lg sm:text-xl font-normal text-center w-full">Think_Fashion's Site</h1>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-purple-300 h-64 flex items-center justify-center text-gray-900 text-center"
-           style="background-image: url('https://source.unsplash.com/1600x900/?fashion'); background-size: cover;">
-    <div class="bg-white bg-opacity-60 p-6 rounded">
-      <h2 class="text-3xl font-normal mb-2">Welcome to Think_Fashion</h2>
-      <p class="text-base">Your ultimate fashion guide</p>
+  <section 
+    class="flex items-center justify-center text-gray-900 text-center bg-cover bg-center h-64 md:h-96"
+    style="background-image: url('https://source.unsplash.com/1600x900/?fashion');">
+    <div class="bg-white bg-opacity-60 p-6 rounded max-w-md">
+      <h2 class="text-2xl md:text-3xl font-normal mb-2">Welcome to Think_Fashion</h2>
+      <p class="text-sm md:text-base">Your ultimate fashion guide</p>
     </div>
   </section>
 
   <!-- Main Content -->
-  <div class="container mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+  <div class="max-w-screen-xl mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
 
     <!-- Sidebar -->
-    <aside class="bg-white p-4 rounded shadow md:col-span-1 text-center">
+    <aside class="hidden md:block bg-white p-4 rounded shadow md:col-span-1 text-center">
       <h3 class="text-xl font-normal mb-4">Sidebar</h3>
       <ul class="space-y-2">
         <li><a href="#" class="block hover:text-purple-600 transition">Fashion Tips</a></li>
@@ -38,20 +39,25 @@
       </ul>
     </aside>
 
-    <!-- Articles -->
-    <main class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
-        <h2 class="text-lg font-normal mb-2">Article One</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </article>
-      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
-        <h2 class="text-lg font-normal mb-2">Article Two</h2>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
-      </article>
-      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
-        <h2 class="text-lg font-normal mb-2">Article Three</h2>
-        <p>Extra card to test the grid layout and responsiveness.</p>
-      </article>
+    <!-- Style Edits -->
+    <main class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Style Edit 1 -->
+      <div class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">5 Must-Have Wardrobe Essentials</h2>
+        <p>Discover timeless pieces every fashion-forward person should own. Stay stylish in any season.</p>
+      </div>
+
+      <!-- Style Edit 2 -->
+      <div class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">Top Trends in Streetwear 2025</h2>
+        <p>Explore the latest streetwear trends making waves this year—from oversized fits to bold prints.</p>
+      </div>
+
+      <!-- Style Edit 3 -->
+      <div class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">Accessorize Like a Pro</h2>
+        <p>Learn how to elevate any outfit with the right accessories — from statement earrings to minimalist bags.</p>
+      </div>
     </main>
   </div>
 
@@ -62,4 +68,3 @@
 
 </body>
 </html>
-

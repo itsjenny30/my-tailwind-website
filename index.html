@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Think_Fashion</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Think_Fashion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white p-4">
-           <nav class="container mx-auto flex justify-between items-center space-x-8">
-               <h1 class="text-xl font-bold">Think_Fashion's site</h1>
-               <ul class="flex space-x-6">
-                  <li><a href="#" class="hover:text-yellow-300">Home</a></li>
-                  <li><a href="#" class="hover:text-yellow-300">About</a></li>
-                  <li><a href="#" class="hover:text-yellow-
-300">Services</a></li>
-                <li><a href="#" class="hover:text-yellow-
-300">Contact</a></li>
-              </ul>
-           </nav> 
-    </header>
-   
-    <!-- Main Content -->
-    <main class="container mx-auto my-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-        <article class="bg-white p-4 rounded shadow">
-            <h2 class="text-lg font-bold mb-2">Article One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </article>
-        <article class="bg-white p-4 rounded shadow">
-            <h2 class="text-lg font-bold mb-2">Article Two</h2>
-            <p>Vestibulum ante ipsum primis in faucibus orci luctus et 
-ultrices.</p>
-        </article>
-        <article class="bg-white p-4 rounded shadow">
-            <h2 class="text-lg font-bold mb-2">Article Four</h2>
-            <p>Extra card to test the grid layout.</p>
-        </article>
-    </main>
+<body class="font-sans bg-purple-100 text-gray-800">
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
-    
+  <!-- Header -->
+  <header class="bg-purple-300 text-gray-900 py-4">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-lg font-normal text-center w-full">Think_Fashion's Site</h1>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-purple-300 h-64 flex items-center justify-center text-gray-900 text-center"
+           style="background-image: url('https://source.unsplash.com/1600x900/?fashion'); background-size: cover;">
+    <div class="bg-white bg-opacity-60 p-6 rounded">
+      <h2 class="text-3xl font-normal mb-2">Welcome to Think_Fashion</h2>
+      <p class="text-base">Your ultimate fashion guide</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+
+    <!-- Sidebar -->
+    <aside class="bg-white p-4 rounded shadow md:col-span-1 text-center">
+      <h3 class="text-xl font-normal mb-4">Sidebar</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="block hover:text-purple-600 transition">Fashion Tips</a></li>
+        <li><a href="#" class="block hover:text-purple-600 transition">Trends</a></li>
+        <li><a href="#" class="block hover:text-purple-600 transition">Accessories</a></li>
+        <li><a href="#" class="block hover:text-purple-600 transition">New Arrivals</a></li>
+      </ul>
+    </aside>
+
+    <!-- Articles -->
+    <main class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">Article One</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">Article Two</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+      </article>
+      <article class="bg-white p-4 rounded shadow hover:shadow-xl transition text-center">
+        <h2 class="text-lg font-normal mb-2">Article Three</h2>
+        <p>Extra card to test the grid layout and responsiveness.</p>
+      </article>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-purple-300 text-gray-900 text-center p-4">
+    <p class="text-sm">&copy; 2025 Think_Fashion. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
+
